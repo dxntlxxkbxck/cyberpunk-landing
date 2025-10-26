@@ -114,7 +114,7 @@ body {
 }
 
 .night-city {
-    height: 777px;
+    height: 847px;
 }
 
 .night-city__container {
@@ -157,4 +157,26 @@ body {
     grid-column: 2;
     grid-row: 1 / span 2;
     clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
+}
+
+.winplay {
+}
+
+.winplay__container {}
+
+.winplay__line {
+    background-image: url(/img/rastr.png); 
+    background-repeat: repeat;
+    max-width: 1330px;
+}
+
+.winplay__content {
+    background-color: var(--black);
+    height: 848px;
+}
+
+.winplay__content h2{
+    background-image: url(/img/sale.svg);
+    background-repeat: no-repeat;
+    color: var(--white);
 }
