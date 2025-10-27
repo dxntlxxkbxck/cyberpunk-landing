@@ -159,24 +159,59 @@ body {
     clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
 }
 
-.winplay {
+/* .winplay {
+    background-color: var(--black);
+    background-image: url(/img/rastr.png);
+    background-repeat: repeat-x;
+
+    height: 847px;
+    width: 100%;
+} */
+
+.winplay::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-image: url("/img/rastr.png");
+    background-repeat: repeat-x;
 }
 
-.winplay__container {}
+.winplay {
+    height: 847px;
+    width: 100%;
+    background-color: var(--black);
+    position: relative;
+
+}
+
+.winplay__container {
+}
 
 .winplay__line {
-    background-image: url(/img/rastr.png); 
-    background-repeat: repeat;
-    max-width: 1330px;
 }
 
 .winplay__content {
-    background-color: var(--black);
-    height: 848px;
+    color: var(--white);
+    background-image: url("/img/sale.svg");
+    background-repeat: no-repeat;
 }
 
 .winplay__content h2{
-    background-image: url(/img/sale.svg);
-    background-repeat: no-repeat;
-    color: var(--white);
 }
+
+.winplay::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 70px;
+    background-image: url("/img/rastr-2.png");
+    background-repeat: repeat-x;
+}
+
+/* background-image: url(/img/rastr.png);
+background-image: url(/img/sale.svg); */
