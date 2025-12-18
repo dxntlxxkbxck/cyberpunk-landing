@@ -14,6 +14,7 @@ body {
     overflow-x: hidden;
 }
 
+/* <---section 1---> */
 .get-started {
     background-image: url(/img/main_img.jpg);
     background-repeat: no-repeat;
@@ -113,6 +114,8 @@ body {
     cursor: pointer;
 }
 
+
+/* <---section 2---> */
 .night-city {
     height: 847px;
 }
@@ -133,12 +136,13 @@ body {
 }
 
 .night-city__grid {
-    padding-top: 70px;
     display: grid;
+    padding-top: 70px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 32px;
     height: 500px;
+    grid-auto-flow: row;
 }
 
 .img-left-1 { 
@@ -159,24 +163,37 @@ body {
     clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
 }
 
+
+/* <---section 3---> */
 .winplay {
+    background-color: var(--black);
 }
 
-.winplay__container {}
-
-.winplay__line {
-    background-image: url(/img/rastr.png); 
-    background-repeat: repeat;
+.winplay__container {
     max-width: 1330px;
 }
 
-.winplay__content {
-    background-color: var(--black);
+.title {
     height: 848px;
+    color: var(--white);
+
+    background-image: url(/img/sale.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 58px;
+    padding-bottom: 10px;
+    padding-left: 164px;
 }
 
 .winplay__content h2{
-    background-image: url(/img/sale.svg);
-    background-repeat: no-repeat;
-    color: var(--white);
+    display: flex;
+    font-size: 62px;
+    font-family: 'Archangelsk', sans-serif;
+    padding: 20px 0;
 }
+
+.winplay__content p {
+
+}
+
+/* <---section 4---> */
