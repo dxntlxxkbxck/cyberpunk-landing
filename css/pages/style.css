@@ -373,73 +373,128 @@ body {
     height: 746px;
 }
 
-.dive__content {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    padding-top: 70px;
-    color: var(--black)
+.dive-bg.dive__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:  center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 60px;
 }
 
 .dive-leftside__container {
-}
-
-.dive-leftside {
-  position: relative;
   display: flex;
-  justify-content: center;
-  gap: 32px;
-  margin-top: 120px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
-.dive-item {
+.dive-leftside__monitor img{
+  display: block;
+  max-width: 100%;
+}
+
+.dive-leftside__logos .dive-leftside__ul{
+  display: flex;
+  align-items: center;
+  gap: 16px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.dive-item.monitor {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
-
-.dive-item.monitor img {
+.dive-item img {
   display: block;
-  width: 460px;
-  height: auto;
-}
-
-.dive-item:not(.monitor) img {
-  display: block;
-  width: 140px;
-  height: auto;
+  max-width: 100%;
 }
 
 .dive-rightside__container {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center left;
 }
 
 .dive-rightside__title {
-    font-size: 62px;
-    font-family: 'Archangelsk', sans-serif;
+  font-size: 62px;
+  font-family: 'Archangelsk', sans-serif;
+  color: var(--black);
+  margin: 0 0 16px
 }
 
 .dive-rightside__description {
-
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--black);
+  width: 624px;
+  margin: 0 0 16px;
 }
 
 .dive-rightside__ul {
-
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
 }
 
 .dive-rightside__li {
-
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
 }
 
 .dive-rightside__btn {
+  width: 194px;
+  height: 59px;
+  background: var(--black);
 
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--yellow);
+  cursor: pointer;
 }
 
 
 /* <---section 5---> */
+.howtobuy {
+
+}
+
+.howtobuy__leftside {
+
+}
+
+.howtobuy__rightside {
+
+}
+
+
+.howtobuy__title {
+
+}
+
+.howtobuy__description {
+
+}
+
+.howtobuy__ul {
+
+}
+
+.howtobuy__li {
+
+}
+
+.howtobuy__subtitle {
+
+}
+
+.howtobuy__logos {
+
+}
+
+.howtobuy__logo {
+  
+}
+/* <---footer---> */
+
+
