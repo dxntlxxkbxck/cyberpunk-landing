@@ -456,39 +456,78 @@ body {
 
 /* <---section 5---> */
 .howtobuy {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 
+  background-color: var(--black);
+  height: 717px;
 }
 
-.howtobuy__leftside {
 
+.howtobuy__leftside {
+  width: 50%;
+}
+
+.howtobuy__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center center;
 }
 
 .howtobuy__rightside {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  gap: 10px;
 }
 
 
 .howtobuy__title {
-
+  font-size: 62px;
+  font-family: 'Archangelsk', sans-serif;
+  color: var(--white);
+  max-width: 624px;
 }
 
 .howtobuy__description {
-
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--light-blue);
 }
 
 .howtobuy__ul {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: var(--white);
 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 70px;
 }
 
 .howtobuy__li {
-
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .howtobuy__subtitle {
-
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--light-blue);
 }
 
 .howtobuy__logos {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
 
 }
 
@@ -497,4 +536,49 @@ body {
 }
 /* <---footer---> */
 
+.footer {}
 
+.upperside {
+  background-color: var(--white);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.upperside__logos {
+}
+
+.upperside__item {}
+
+.upperside__links {
+}
+
+.upperside__link {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.upperside__link a{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--black);
+}
+
+.lowerside {
+  background-color: var(--black);
+  height: 40px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lowerside__rights{
+  font-size: 12px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: var(--white);
+}
